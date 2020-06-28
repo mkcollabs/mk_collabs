@@ -1,0 +1,117 @@
+
+#showcase{
+    color: #fff;
+    background: #333;
+    padding: 2rem;
+    position: relative;
+}
+
+#showcase:before {
+    content: '';
+    background: url('../../../content/assets/img/showcase/showcase.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+#showcase .showcase-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+#showcase .showcase-content {
+    z-index: 1;
+}
+
+#showcase .showcase-content p{ 
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Who section*/
+
+#who .who-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+#who .who-container > *:first-child {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+
+#who .who-container > *:first-child img {
+    margin-top: 1rem;
+}
+
+#who .who-container > *:first-child p {
+    font-size: 1.25rem;
+}
+
+#who .who-container > *:first-child,
+#who .who-container > *:last-child {
+    grid-gap: 1rem;
+    align-items: center;
+    grid-column: 1 / span 3;
+}
+
+#who .who-container > *:last-child {
+    color: #fff;
+    background: #333;
+    padding: 2rem;
+    position: relative;
+}
+
+
+#who .who-container > *:last-child ::before {
+    content: '';
+    background: url('../../../content/assets/img/showcase/who-showcase.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+
+#who .who-container > *:last-child .process p{
+    font-size: 1.5rem;
+}
+
+/* What Section*/
+
+#what .what-container >*:nth-child(odd){
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+
+#what .what-container >*:nth-child(even){
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+}
+
+#what .what-container .card .who-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+#what .what-container .card .who-card h3 {
+    color: var(--primary-color);
+}
+
+#what .what-container .card .who-card p {
+    font-size: 1.1rem;
+}
+
+#what .what-container .card img {
+    border-radius: 10px;
+}

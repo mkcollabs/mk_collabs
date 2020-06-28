@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --primary-color: #0288d1;
+    --secondary-color:#B32526;
+    --light-color: #b1adb367;
+    --dark-color: #10182A ; 
+    --max-width: 1100px;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif ;
+}
+
+img{
+    width: 100%;
+}
+
+.main-container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+/* Texts */
+.text-primary {
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.text-highlight {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.bold {
+    font-weight: 600;
+}
+/* Buttons*/
+
+.btn {
+    display: inline-block;
+    border: none;
+    background: var(--dark-color);
+    padding: 0.5rem 1.5rem;
+    color: #fff;
+}
+
+.btn-light { background: var(--light-color)}
+.btn-primary { background: var(--primary-color)}
+.btn-secondary { background: var(--secondary-color)}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn:hover{opacity: 0.9;}
+
+/* card text*/
+.card {
+    background: #fff;
+    padding: 1rem;
+}
+
+.card-text {
+    font-size: 1.2rem;
+}
+
+.bg-light {
+    background: var(--light-color);
+}
+
+.bg-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.bg-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.bg-secondary {
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a {
+    color: #fff;
+}
+
+.py-1 {padding: 1.5rem 0}
+.py-2 {padding: 2.5rem 0}
+.py-3 {padding: 3.5rem 0}
+.p-1 {padding: 1.5rem}
+.p-2 {padding: 2.5rem}
+.p-3 {padding: 3.5rem}
+
+.my-1{margin: 1.5rem 0}
+.my-2{margin: 2.5rem 0}
+.my-3{margin: 3.5rem 0}
+.m-1{margin: 1.5rem}
+.m-2{margin: 2.5rem}
+.m-3{margin: 3.5rem}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #555 dotted 1px;
+}
+.list li a:hover {
+    color: var(--primary-color) !important;
+}
+
+.l-heading{
+    font-size: 3rem;
+}
