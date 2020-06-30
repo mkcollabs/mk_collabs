@@ -2,12 +2,14 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Partners from "../components/carousel"
+
+import jump from 'jump.js'
 
 import './css/style.css'
 
-const logo = require('../../content/assets/img/sevices/seo.png')
 
-const BlogIndex = ({ data, location }) => {
+const Index = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
 
   return (
@@ -20,7 +22,7 @@ const BlogIndex = ({ data, location }) => {
                     <h1>Your Digital <span className="text-primary">Outreach</span></h1>
                     <h2 className='py-1'>A digital agency focused on web</h2>
                     <p>We enable businesses to fast forward their growth by delivering expert and innovative digital marketing services</p>
-                    <a href="article.html" className="btn btn-primary">Free Consultation</a>
+                    <a href="#contact" className="btn btn-primary" onClick = {() => jump('#contact', {duration: 2000})}>Free Consultation</a>
                 </div>
             </div>
         </div>
@@ -46,14 +48,14 @@ const BlogIndex = ({ data, location }) => {
           <div className="card">
               <div className="process">
                 <p className="card-text py-1">Every business is the owner’s baby, our client’s businesses are our own babies and we love to help them grow!</p>
-                <a href="article.html" className="btn btn-dark">Check Our 6-D Process</a>
+                <Link to="/page-2" className="btn btn-dark">Check Our 6-D Process</Link>
               </div>
           </div>
         </div>
       </div>
     </section>
     {/* What Section */}
-    <section id="what">
+    <section id="what" className="py-3">
       <div className="main-container">
         <h1 className="my-1">WHAT WE DO</h1>
         <div className="what-container py-2">
@@ -105,17 +107,58 @@ const BlogIndex = ({ data, location }) => {
     </section>
     {/* Partners Section */}
     <section id="partners">
-      <div style={{height:"80vh"}}  className="main-container">
+      <div className="main-container">
         <h1>PARTNERS</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia vero doloribus cupiditate maiores corporis deserunt laboriosam repellendus ad ipsam? Fugiat?</p>
+        <Partners></Partners>
       </div>
     </section>  
     {/*  Contact Section */}
-    <section style={{height:"80vh"}} id="contact">  
+    <section id="contact" className="py-3">  
       <div className= "main-container">
-        <h1>CONTACT </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nisi culpa a fugit tempore atque.
-        </p>
+        <h1 >CONSULTAION</h1>
+        <p className="contact-text py-1">Don't hesitate leaving your info down below to schedule our first meeting together</p>
+        <div className="form-container">
+          <form method="post" action="#" className="contact-form">
+            <div  className="form-header">
+              <h3>Contact Us</h3>
+              <small>or</small>
+              <h3>Request A <span className="text-primary">Free</span> Consultation</h3>
+            </div>
+            <div className="form-control py-1">
+              <label htmlFor="name">Name</label>
+              <input type="text" required name="name" id="name" placeholder="Enter your name"/>
+            </div>
+            <div className="form-control">
+            <label htmlFor="email">Email</label>
+            <input type="email" required name="email" id="email" placeholder="Enter your email"></input>
+            </div>
+            <div className="form-control">
+            <label htmlFor="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your Phone"></input>
+            </div>
+            <div className="form-control">
+            <label htmlFor="company">Company Name</label>
+            <input type="tel" name="company" id="company" placeholder="Optional"></input>
+            </div>
+            <div className="form-control">
+            <label htmlFor="message">Message</label>
+            <textarea name="message" id="message" placeholder="..."></textarea>
+            </div>
+            <button class="form-btn">Send</button>
+          </form>
+          <div class="features">
+            <div class="feature">
+                <i class="fas fa-chart-pie"></i>
+                <h3>Analytics</h3>
+                <p>Don’t hesitate to leave your company info, so we can make a quick analysis before contacting you.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-phone-volume"></i>
+                <h3>Call Us At</h3>
+                <p>+96-627-9874-7173</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     </Layout>
@@ -123,7 +166,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default Index
 
 export const pageQuery = graphql`
   query {

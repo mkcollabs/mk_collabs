@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 
-import BlogLayout from "../components/blog-layout"
+import Layout from "../components/secLayout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
@@ -12,12 +12,13 @@ const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <BlogLayout title={siteTitle}>
+    <Layout title={siteTitle}>
       <SEO title="All posts" />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (
-          <article style={{marginTop: "-2.5rem"}} data-aos="zoom-in"
+          <div className="main-container">
+              <article style={{marginTop: "-2.5rem"}} data-aos="zoom-in"
                        data-aos-offset="200"
                        data-aos-delay="10"
                        data-aos-duration="1000" 
@@ -42,10 +43,11 @@ const BlogIndex = ({ data }) => {
               />
             </section>
             <hr/>
-          </article>
+            </article>
+          </div>       
         )
       })}
-    </BlogLayout>
+    </Layout>
   )
 }
 
