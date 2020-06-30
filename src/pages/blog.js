@@ -24,6 +24,8 @@ const BlogIndex = ({ data }) => {
                        data-aos-duration="1000" 
                        key={node.fields.slug}>
             <header>
+              <h1>add</h1>
+  
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
