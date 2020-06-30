@@ -6,13 +6,10 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #f4f4f4;
-    font-family: 'Open Sans', sans-serif;
-}
 
 #process {
     color: #fff;
+    font-family: 'Open Sans', sans-serif;
     background: #333;
     padding: 2rem;
     position: relative;
@@ -50,6 +47,8 @@ body {
 
 #process-card {
     margin: 5rem;
+    background-color: #f4f4f4;
+    font-family: 'Open Sans', sans-serif; 
 }
 
 #process-card .grid-card-container {
@@ -66,7 +65,7 @@ body {
     padding: 0.25rem;
     justify-content: center;
     text-align: center;
-    height: 25rem;
+    height: 22rem;
     width: 100%;
     background-color: #f4f4f4;
     border-radius: 10px;

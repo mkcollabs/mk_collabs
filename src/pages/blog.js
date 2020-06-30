@@ -6,6 +6,7 @@ import Layout from "../components/secLayout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
+import './css/blog.css'
 
 const BlogIndex = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -14,41 +15,43 @@ const BlogIndex = ({ data }) => {
   return (
     <Layout title={siteTitle}>
       <SEO title="All posts" />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
-        return (
-          <div className="main-container">
-              <article style={{marginTop: "-2.5rem"}} data-aos="zoom-in"
-                       data-aos-offset="200"
-                       data-aos-delay="10"
-                       data-aos-duration="1000" 
-                       key={node.fields.slug}>
-            <header>
-              <h1>add</h1>
-  
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none`, color: '#112d4e'}} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-            <hr/>
-            </article>
-          </div>       
-        )
-      })}
+      <section id="blog">
+            <div className="main-container">
+                <div className="blog-container">
+                    <div className="blog-content">
+                        <p className="my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, iusto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="blog-articles" className="py-1">
+          <div className="grid-articles-container">
+            {posts.map(({ node }) => {
+              const title = node.frontmatter.title || node.fields.slug
+              return (
+                    <article key={node.fields.slug} className="article"
+                                                                      data-aos="flip-up"
+                                                                      data-aos-offset="200"
+                                                                      data-aos-delay="300"
+                                                                      data-aos-duration="1000">
+                      <h3 style={{marginBottom: rhythm(1 / 4),}} className="title">
+                        <Link  to={node.fields.slug}>
+                          {title}
+                        </Link>
+                      </h3>
+                      <small>{node.frontmatter.date}</small>
+                      <div className="bar"></div>
+                      <section>
+                        <p
+                          dangerouslySetInnerHTML={{
+                            __html: node.frontmatter.description || node.excerpt,
+                          }}
+                        />
+                      </section>
+                  </article>  
+              )})}
+            </div>
+      </section>  
     </Layout>
   )
 }
