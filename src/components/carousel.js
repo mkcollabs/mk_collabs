@@ -3,7 +3,7 @@ import Carousel from 'react-elastic-carousel';
 
 import Item from './Item';
 
-import './css/carousel.css'
+
 
 class Partners extends Component {
 

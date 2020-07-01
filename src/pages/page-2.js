@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/secLayout"
 import SEO from "../components/seo"
 
 
@@ -13,13 +13,14 @@ const Process = ({ data, location }) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="6d process" />
         <section id="process">
             <div className="main-container">
                 <div className="process-container">
                     <div className="process-content">
                         <h1>Our <span className="text-primary">6-D</span> Process</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, iusto.</p>
+                        <h3>Our collaboration methodology</h3>
+                        <p>Here's our proven six step process for designing winning campaigns</p>
                     </div>
                 </div>
             </div>

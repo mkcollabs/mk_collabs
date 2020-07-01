@@ -14,7 +14,7 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="Blog" />
       <section id="blog">
             <div className="main-container">
                 <div className="blog-container">
@@ -31,8 +31,8 @@ const BlogIndex = ({ data }) => {
               return (
                     <article key={node.fields.slug} className="article"
                                                                       data-aos="flip-up"
-                                                                      data-aos-offset="200"
-                                                                      data-aos-delay="300"
+                                                                      data-aos-offset="0"
+                                                                      data-aos-delay="10"
                                                                       data-aos-duration="1000">
                       <h3 style={{marginBottom: rhythm(1 / 4),}} className="title">
                         <Link  to={node.fields.slug}>

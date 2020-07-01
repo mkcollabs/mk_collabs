@@ -9,5 +9,10 @@ export default styled.div`
     background: #fff;
     color: #333;
     margin: 0 15px;
-    font-size: 2rem
+    font-size: 2rem;
+    @media(max-width: 768px) {
+        grid-template-columns: 1fr;
+        margin: 0;
+        height: 350px;
+    }
 `

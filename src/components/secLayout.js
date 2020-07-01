@@ -1,6 +1,6 @@
 import React from "react"
 
-import Navbar from './secNav'
+import Navbar from './nav/secNav'
 
 import './css/shared.css'
 
