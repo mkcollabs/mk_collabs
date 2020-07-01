@@ -16,9 +16,10 @@ ul,li,a {
     width: 100%;
     background: transparent;
     position: fixed;
-    top: 0;
+    top: -60px;
     z-index: 2;
     transition: 0.1s;
+
 }
 
 .main-nav .main-nav-container{
@@ -29,7 +30,16 @@ ul,li,a {
 }
 
 .main-nav .main-nav-logo {
+
     margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.main-nav .main-nav-logo img{
+    height: 170px;
+    width: 250px;
+    margin: 0;
+    margin-bottom: -60px;
     padding: 0;
     color: #fff;
 }
@@ -38,6 +48,8 @@ ul,li,a {
     justify-self: end;
     display: flex;
     margin: 0;
+    margin-top: 50px;
+
 }
 
 .main-nav ul li  {
@@ -85,9 +97,9 @@ ul,li,a {
         grid-template-columns: 1fr;
 
     }
-
     .main-nav ul {
         justify-self: center;
+        margin: -10px;
     }
     .main-nav .main-nav-logo {
         justify-self: center;
@@ -113,6 +125,9 @@ ul,li,a {
 }
 
 @media (max-width: 375px) {
+    .main-nav ul {
+        justify-self: center;
+    }
     .main-nav ul li {
         margin: 0.1;
     }

@@ -33,7 +33,7 @@ class Navbar extends Component {
         return (
             <nav className={ this.state.scrolled ? 'main-nav scrolled' : 'main-nav' }>
                 <div className="main-container main-nav-container">
-                    <Link className="main-nav-logo">MK COLLABS</Link>
+                    <div className="main-nav-logo"><img src={ this.state.scrolled ? require("../../../content/assets/img/logos/black-logo.png") : require("../../../content/assets/img/logos/white-logo.png") } alt="Logo"/></div>
                     <ul >
                         <li><a href="/#showcase" onClick = {() => jump('#showcase', {duration: 2000})}>Home</a></li>
                         <li><a href="/#who" onClick = {() => jump('#who', {duration: 2000})}>Who we are</a></li>

@@ -235,7 +235,7 @@
         display: grid;
         justify-content: center;
         align-items: center;
-        height: 75vh;
+        height: 70vh;
     }
 
     /*Who Section*/
@@ -292,6 +292,12 @@
     }
 }
 
+@media(max-width: 586px) {
+    #showcase .showcase-container {
+        height: 85vh;
+    }
+}
+
 @media(max-width: 375px) {
     #showcase{
         padding: 2rem;
@@ -300,7 +306,7 @@
         display: grid;
         justify-content: center;
         align-items: center;
-        height: 60vh;
+        height: 70vh;
     }
     #showcase .showcase-content h1{ 
         margin-top: 3rem;
