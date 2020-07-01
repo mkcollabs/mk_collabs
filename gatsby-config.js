@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `MK COLLABS`,
     author: {
       name: `Manal Alkhatib`,
       summary: `Digital Marketing Consultant`,
@@ -8,7 +8,7 @@ module.exports = {
     description: `MK COLLABS, digital marketing website, deo, Business Development, Google Advertising, Social media,Marketing Consultancy `,
     siteUrl: `https://knightblog.netlify.com`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `Manal Alkhatib`,
     },
   },
   plugins: [
@@ -60,13 +60,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
+        name: `MK COLLABS`,
         short_name: `GatsbyJS`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,

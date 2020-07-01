@@ -40,9 +40,12 @@ ul,li,a {
     margin: 0;
 }
 
+.main-nav ul li  {
+    color: #fff;
+    margin: 0.5rem;
+}
 .main-nav ul li a {
     color: #fff;
-    padding: 0.75rem;
 }
 
 .main-nav ul li a:hover {
@@ -74,3 +77,47 @@ ul,li,a {
 }
 
 
+@media (max-width: 768px) {
+   
+
+    .main-nav .main-nav-container{
+        width: 100%;
+        grid-template-columns: 1fr;
+
+    }
+
+    .main-nav ul {
+        justify-self: center;
+    }
+    .main-nav .main-nav-logo {
+        justify-self: center;
+    }
+    
+    .main-nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .main-nav ul li a:hover,
+    .main-nav ul li a:active {
+        background: none;
+        color:  var(--primary-color);
+        border-radius: 0;
+        padding: 0;
+    }
+    
+    .main-nav ul li .talk:hover {
+        background: none;
+        color: var(--secondary-color);
+    }
+    
+}
+
+@media (max-width: 375px) {
+    .main-nav ul li {
+        margin: 0.1;
+    }
+    .main-nav ul li a {
+        font-size: 0.752rem;
+    }
+    
+}

@@ -37,8 +37,13 @@
     z-index: 1;
 }
 
+#process .process-container .process-content h3 {
+    margin: 1rem;
+    font-size: 1.1rem;
+}
+
 #process .process-container .process-content p {
-    margin-bottom: 1rem;
+    margin: 1rem;
     font-size: 1.1rem;
 }
 
@@ -100,9 +105,34 @@
     }
   }
 
+
   
-  @media(max-width:720px) {
+  @media(max-width:768px) {
+    #process {
+        padding: 3rem;
+
+    }
+    #process .process-container {
+
+        height: 40vh;
+    }
     #process-card .grid-card-container{
         grid-template-columns: 1fr;
+    }
+
+    #process .process-container .process-content h1 {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+    }
+
+    #process .process-container .process-content p {
+        margin-bottom: 0.1rem;
+        font-size: 1.1rem;
+    }
+
+    #process-card {
+        margin: 3rem;
+
     }
   }

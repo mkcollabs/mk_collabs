@@ -2,8 +2,8 @@ import React, {Component} from "react"
 import { Link } from "gatsby"
 
 
-import './css/shared.css'
-import './css/nav.css'
+import '../css/shared.css'
+import '../css/nav.css'
 
 class Navbar extends Component {
     constructor() {

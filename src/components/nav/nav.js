@@ -3,8 +3,8 @@ import { Link } from "gatsby"
 
 import jump from 'jump.js'
 
-import './css/shared.css'
-import './css/nav.css'
+import '../css/shared.css'
+import '../css/nav.css'
 
 class Navbar extends Component {
     constructor() {

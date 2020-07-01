@@ -231,6 +231,50 @@
 
 @media(max-width: 768px) {
 
+    #showcase .showcase-container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 75vh;
+    }
+
+    /*Who Section*/
+    #who .who-container {
+        grid-template-columns: 1fr;
+        grid-column: 1fr;
+        grid-gap: 0.5rem;
+    }
+
+    #who .who-container > *:first-child {
+        grid-template-columns: 1fr;
+    }
+       
+    #who .who-container > *:first-child img {
+        display: none;
+    }
+
+    #who .who-container > *:first-child p {
+        font-size: 1rem;
+    }
+    #who .who-container > *:first-child,
+    #who .who-container > *:last-child {
+    grid-column: 1;
+    }
+
+    /*What*/
+    #what .what-container >*:nth-child(odd){
+        grid-template-columns: 1fr;
+    }
+    #what .what-container >*:nth-child(even){
+        grid-template-columns: 1fr;
+    }
+    #what .what-container .card .who-card {
+        align-items: center;
+        text-align: center;
+    }
+    #what .what-container .card .who-card p {
+        font-size: 1rem;
+    }
     /* Contact form*/
     .form-container {
         flex-direction: column;
@@ -238,5 +282,37 @@
 
     .contact-form {
         border-right: 0;
+    }
+
+    #contact .main-container .contact-text {
+        font-size: 1rem;
+    }
+    #contact .main-container h1 {
+        padding-top: 1rem;
+    }
+}
+
+@media(max-width: 375px) {
+    #showcase{
+        padding: 2rem;
+    }
+    #showcase .showcase-container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+    }
+    #showcase .showcase-content h1{ 
+        margin-top: 3rem;
+        margin-bottom: 0.1rem;
+        font-size: 1.2rem;
+    }
+    #showcase .showcase-content h2{ 
+        margin-bottom: 0.1rem;
+        font-size: 1.25rem;
+    }
+    #showcase .showcase-content p{ 
+        margin-bottom: 0.5rem;
+        font-size: 0.95rem;
     }
 }

@@ -18,7 +18,7 @@ const Index = ({ data, location }) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO title="All posts" />
+      <SEO title="Home" />
       <header id="showcase">
         <div className="main-container">
             <div className="showcase-container">
@@ -90,7 +90,7 @@ const Index = ({ data, location }) => {
           <div className="card bg-light my-1"
                   data-aos="fade-right"
                   data-aos-offset="200"
-                  data-aos-delay="300"
+                  data-aos-delay="10"
                   data-aos-duration="1000">
             <img src={require('../../content/assets/img/sevices/seo.png')} alt=""/>
             <div className="who-card p-2">
@@ -101,7 +101,7 @@ const Index = ({ data, location }) => {
           <div className="card bg-light my-1"
                   data-aos="fade-left"
                   data-aos-offset="200"
-                  data-aos-delay="300"
+                  data-aos-delay="10"
                   data-aos-duration="1000">
             <div className="who-card p-2">
               <h3>Business Development</h3>
@@ -113,7 +113,7 @@ const Index = ({ data, location }) => {
           <div className="card bg-light my-1"
                   data-aos="fade-right"
                   data-aos-offset="200"
-                  data-aos-delay="300"
+                  data-aos-delay="10"
                   data-aos-duration="1000">
             <img  src={require('../../content/assets/img/sevices/GoogleAdvertising.png')} alt=""/>
             <div className="who-card p-2">
@@ -124,7 +124,7 @@ const Index = ({ data, location }) => {
           <div className="card bg-light my-1"
                   data-aos="fade-left"
                   data-aos-offset="200"
-                  data-aos-delay="300"
+                  data-aos-delay="10"
                   data-aos-duration="1000">
             <div className="who-card p-2">
               <h3>Social media</h3>
@@ -135,7 +135,7 @@ const Index = ({ data, location }) => {
           <div className="card bg-light my-1"
                   data-aos="fade-right"
                   data-aos-offset="200"
-                  data-aos-delay="300"
+                  data-aos-delay="10"
                   data-aos-duration="1000">
           <img  src={require('../../content/assets/img/sevices/MarketingConsultancy.png')} alt=""/>
             <div className="who-card p-2">
@@ -146,7 +146,7 @@ const Index = ({ data, location }) => {
           <div className="card bg-light my-1"
                   data-aos="fade-left"
                   data-aos-offset="200"
-                  data-aos-delay="300"
+                  data-aos-delay="10"
                   data-aos-duration="1000">
             <div className="who-card p-2">
               <h3>Tracking & Analytics</h3>
@@ -158,7 +158,7 @@ const Index = ({ data, location }) => {
       </div>
     </section>
     {/* Partners Section */}
-    <section id="partners">
+    <section id="partners" className="my-1">
       <div className="main-container">
         <h1>PARTNERS</h1>
         <Partners></Partners>
