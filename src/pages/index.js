@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,12 +8,13 @@ import jump from 'jump.js'
 import AOS from 'aos';
 
 import 'aos/dist/aos.css';
-
 import './css/style.css'
 
-AOS.init();
-
 const Index = ({ data, location }) => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
   const siteTitle = data.site.siteMetadata.title
 
   return (
