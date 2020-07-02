@@ -29,11 +29,7 @@ const BlogIndex = ({ data }) => {
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
               return (
-                    <article key={node.fields.slug} className="article"
-                                                                      data-aos="flip-up"
-                                                                      data-aos-offset="0"
-                                                                      data-aos-delay="10"
-                                                                      data-aos-duration="1000">
+                    <article key={node.fields.slug} className="article">
                       <h3 style={{marginBottom: rhythm(1 / 4),}} className="title">
                         <Link  to={node.fields.slug}>
                           {title}
