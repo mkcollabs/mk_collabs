@@ -65,3 +65,10 @@
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 340px) {
+    #blog .blog-container {
+        height: 45vh;
+    }
+    
+}
