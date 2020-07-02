@@ -143,3 +143,10 @@ ul,li,a {
     }
     
 }
+
+@media (max-width: 320px) {
+    .main-nav ul li a {
+        font-size: 0.4rem;
+    }
+    
+}
