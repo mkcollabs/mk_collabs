@@ -10,6 +10,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './css/style.css'
 
+import contactInfo from '../../site/settings/contact_info.json'
+
 const Index = ({ data, location }) => {
   useEffect(() => {
     AOS.init();
@@ -215,7 +217,7 @@ const Index = ({ data, location }) => {
             <div className="feature">
                 <i className="fas fa-phone-volume"></i>
                 <h3>Call Us At</h3>
-                <p>+96-627-9874-7173</p>
+                <p>{contactInfo.phone}</p>
             </div>
           </div>
         </div>
