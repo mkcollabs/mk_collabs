@@ -172,6 +172,7 @@ const Index = ({ data, location }) => {
         <p className="contact-text py-1">Don't hesitate leaving your info down below to schedule our first meeting together</p>
         <div className="form-container">
           <form
+            action="/thanks"
             name="contact"
             method="post"
             data-netlify="true"
