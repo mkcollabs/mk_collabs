@@ -172,12 +172,12 @@ const Index = ({ data, location }) => {
         <p className="contact-text py-1">Don't hesitate leaving your info down below to schedule our first meeting together</p>
         <div className="form-container">
           <form
-            action="/" 
             name="contact"
             method="POST" 
             name="contact" 
             data-netlify="true"
             data-netlify-honeypot = "bot-field"
+            onSubmit="submit"
             className="contact-form">
             <div  className="form-header">
               <h3>Contact Us</h3>
