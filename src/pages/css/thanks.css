@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#thanks {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    background: #333;
+    padding: 2rem;
+    position: relative;
+}
+
+#thanks:before {
+    content: '';
+    background: url('../../../content/assets/img/logos/black-logo.png') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+#thanks .thanks-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#thanks .thanks-container .thanks-content {
+    z-index: 1;
+}
+
+#thanks .thanks-container .thanks-content p{
+    font-size: 1.2rem;
+}
+
+
