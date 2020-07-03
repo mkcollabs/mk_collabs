@@ -197,16 +197,16 @@ const Index = ({ data, location }) => {
             <label htmlFor="message">Message</label>
             <textarea name="message" id="message" placeholder="..."></textarea>
             </div>
-            <button class="form-btn">Send</button>
+            <button className="form-btn">Send</button>
           </form>
-          <div class="features">
-            <div class="feature">
-                <i class="fas fa-chart-pie"></i>
+          <div className="features">
+            <div className="feature">
+                <i className="fas fa-chart-pie"></i>
                 <h3>Analytics</h3>
                 <p>Don’t hesitate to leave your company info, so we can make a quick analysis before contacting you.</p>
             </div>
-            <div class="feature">
-                <i class="fas fa-phone-volume"></i>
+            <div className="feature">
+                <i className="fas fa-phone-volume"></i>
                 <h3>Call Us At</h3>
                 <p>+96-627-9874-7173</p>
             </div>

@@ -125,28 +125,8 @@ ul,li,a {
 }
 
 @media (max-width: 375px) {
-    .main-nav ul {
-        justify-self: center;
+    .main-nav ul li:nth-child(2) {
+        display: none;
     }
-    .main-nav ul li {
-        margin: 0.1;
-    }
-    .main-nav ul li a {
-        font-size: 0.752rem;
-    }
-    
 }
 
-@media (max-width: 340px) {
-    .main-nav ul li a {
-        font-size: 0.6rem;
-    }
-    
-}
-
-@media (max-width: 320px) {
-    .main-nav ul li a {
-        font-size: 0.4rem;
-    }
-    
-}
