@@ -171,10 +171,12 @@ const Index = ({ data, location }) => {
         <h1 >CONSULTAION</h1>
         <p className="contact-text py-1">Don't hesitate leaving your info down below to schedule our first meeting together</p>
         <div className="form-container">
-          <form 
+          <form
+            action="POST" 
             name="contact"
-            method="post"
-            data-netlify = "true"
+            method="POST" 
+            name="contact" 
+            data-netlify="true"
             data-netlify-honeypot = "bot-field"
             className="contact-form">
             <div  className="form-header">
@@ -202,7 +204,7 @@ const Index = ({ data, location }) => {
             <label htmlFor="message">Message</label>
             <textarea name="message" id="message" placeholder="..."></textarea>
             </div>
-            <button className="form-btn">Send</button>
+            <button className="form-btn" type="submit">Send</button>
           </form>
           <div className="features">
             <div className="feature">
