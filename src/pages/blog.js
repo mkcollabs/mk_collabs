@@ -19,7 +19,7 @@ const BlogIndex = ({ data }) => {
             <div className="main-container">
                 <div className="blog-container">
                     <div className="blog-content">
-                        <p className="my-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, iusto.</p>
+                        <p className="my-2"></p>
                     </div>
                 </div>
             </div>
