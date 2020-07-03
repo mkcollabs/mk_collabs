@@ -173,18 +173,16 @@ const Index = ({ data, location }) => {
         <div className="form-container">
           <form
             name="contact"
-            method="POST" 
-            name="contact" 
+            method="post"
             data-netlify="true"
-            data-netlify-honeypot = "bot-field"
-            onSubmit="submit"
+            data-netlify-honeypot="bot-field"
             >
             <div  className="form-header">
               <h3>Contact Us</h3>
               <small>or</small>
               <h3>Request A <span className="text-primary">Free</span> Consultation</h3>
             </div>
-            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
             <div className="form-control py-1">
               <label htmlFor="name">Name</label>
               <input type="text" required name="name" id="name" placeholder="Enter your name"/>
