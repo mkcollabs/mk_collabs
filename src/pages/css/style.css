@@ -137,7 +137,7 @@
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 }
 
-.form-container .contact-form {
+.form-container form {
     border-right: 1px solid #ecf2ff;
     display: flex;
     flex-direction: column;
@@ -145,7 +145,7 @@
     flex: 1;
 }
 
-.form-container .contact-form .form-control {
+.form-container form .form-control {
     margin: 10px 0;
     width: 100%;
     display: flex;
@@ -154,13 +154,13 @@
     text-align: left;
 }
 
-.form-container .contact-form .form-control label {
+.form-container form .form-control label {
     display: inline-block;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.form-container .contact-form .form-control input {
+.form-container form .form-control input {
     background: transparent;
     border: 2px solid #ecf2ff;
     border-radius: 3px;
@@ -169,7 +169,7 @@
     padding: 10px;
     width: 100%;
 }
-.form-container .contact-form .form-control textarea {
+.form-container form .form-control textarea {
     background: transparent;
     border: 2px solid #ecf2ff;
     border-radius: 3px;
@@ -280,7 +280,7 @@
         flex-direction: column;
     }
 
-    .contact-form {
+    form {
         border-right: 0;
     }
 
