@@ -26,10 +26,9 @@ According to the stock market, Your business probably going to fall in one of th
 
 There is no single service or App idea or a product you could think of creating that it doesn’t exist already. and here is the thing, if your idea is coming with something new then please and I beg you to do your homework and check if it’s actually new as you think its and I think it won’t if you did good research but if it was I would be the first one to jump in and want to invest in your startup. but even if it wasn’t that’s totally fine. why you say? because of the second tip, but let’s highlight the first one first!
 
+## 1. **Market Research**
 
-
-### 1. **Market Research**
-
+> \
 > “So you won’t go in blindly”
 
 Market research is the first step after coming up with the business idea to take, because:
@@ -41,7 +40,7 @@ Market research is the first step after coming up with the business idea to take
 * Knowing what to expect and the process needed.
 * it’s important when setting your growth strategies
 
-### 2. **Definition**
+## 2. **Definition**
 
 \
 Once you did your market analysis you will be able to see where you stand and navigate the areas you are targeting to compete among. whether it’s the audience demographics that your product or service targets or what market your business could grow faster that of course, if your business idea has the accessibility to be multinational.
@@ -51,8 +50,6 @@ But the most important step to take after is setting your strategies, understand
 #### What’s the added value of my product/service offering?
 
 > ***Example*: Some young excited entrepreneur launching his App came up to me pitching his App idea, which is identical to 3 existing globally dominant Applications offering the same service. Now it’s important to say that there is nothing wrong with that because we are living in a revolutionary world were all innovative ideas and services have been created and offered with different options having the luxury to pick and choose and yet buying customer loyalty is higher than ever. However, when I asked him this question he came up with super difficult to apply and unstudied services to add to the current offering to make his idea stand out. losing the definition and trying more the mixing and match concept. This could cost you all your fund investment. so Don’t!**
-
-
 
 #### Make it Simple yet Neat!
 
