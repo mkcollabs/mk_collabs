@@ -174,8 +174,9 @@ const Index = ({ data, location }) => {
           <form
             action="POST" 
             name="contact"
-            method="post"
-            data-netlify = "true"
+            method="POST" 
+            name="contact" 
+            data-netlify="true"
             data-netlify-honeypot = "bot-field"
             className="contact-form">
             <div  className="form-header">
