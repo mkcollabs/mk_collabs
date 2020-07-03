@@ -184,6 +184,7 @@ const Index = ({ data, location }) => {
               <small>or</small>
               <h3>Request A <span className="text-primary">Free</span> Consultation</h3>
             </div>
+            <input type="hidden" name="bot-field" />
             <div className="form-control py-1">
               <label htmlFor="name">Name</label>
               <input type="text" required name="name" id="name" placeholder="Enter your name"/>
