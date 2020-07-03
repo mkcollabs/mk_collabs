@@ -178,7 +178,7 @@ const Index = ({ data, location }) => {
             data-netlify="true"
             data-netlify-honeypot = "bot-field"
             onSubmit="submit"
-            className="contact-form">
+            >
             <div  className="form-header">
               <h3>Contact Us</h3>
               <small>or</small>
