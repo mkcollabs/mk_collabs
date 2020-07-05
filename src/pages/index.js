@@ -46,7 +46,7 @@ const Index = ({ data, location }) => {
           <div className="card" 
                   data-aos="slide-right"
                   data-aos-offset="200"
-                  data-aos-delay="10"
+                  data-aos-delay="0"
                   data-aos-duration="1000">
             <img className="who-img" src={require("../../content/assets/img/logos/Who-logo.png")} alt="who-img"/>
             <p className="card-text">Every customer is unique. That’s why we customize every one of our plans to fit your needs exactly. Whether it’s a small strategy or a comprehensive effort, we’ll sit down with you, listen to your requests, and prepare a customized plan to meet your online objectives.</p>
@@ -54,29 +54,25 @@ const Index = ({ data, location }) => {
           <div className="card"
                   data-aos="fade-in"
                   data-aos-offset="200"
-                  data-aos-delay="300"
+                  data-aos-delay="10"
                   data-aos-duration="1000">
             <p className="card-text">Independant marketing senior professionals, Ex-Googlers & <span className="text-highlight bold">Certified advertisers</span></p>
           </div>
           <div className="card bg-primary"
                   data-aos="fade-in"
                   data-aos-offset="200"
-                  data-aos-delay="300"
+                  data-aos-delay="10"
                   data-aos-duration="1000">
             <p className="card-text">We always strive to be a business partner adding value and knowledge to organizations in the field of <span className="text-dark bold">Digital Marketing</span></p>
           </div>
           <div className="card"
                   data-aos="fade-in"
                   data-aos-offset="200"
-                  data-aos-delay="300"
+                  data-aos-delay="10"
                   data-aos-duration="1000">
             <p className="card-text">We help companies enable better customer experience by learning from their data. & using best advertising practices & custom <span className="text-secondary bold">designed</span> strategies</p>
           </div>
-          <div className="card"
-                  data-aos="fade-up"
-                  data-aos-offset="200"
-                  data-aos-delay="300"
-                  data-aos-duration="1000">
+          <div className="card">
               <div className="process">
                 <p className="card-text py-1">Every business is the owner’s baby, our client’s businesses are our own babies and we love to help them grow!</p>
                 <Link to="/page-2" className="btn btn-dark">Check Our 6-D Process</Link>
@@ -204,16 +200,11 @@ const Index = ({ data, location }) => {
             </div>
             <div className="form-control">
             <label htmlFor="message">Message</label>
-            <textarea name="message" id="message" placeholder="..."></textarea>
+            <textarea name="message" id="message" placeholder="Don’t hesitate to leave your company info, so we can make a quick analysis before contacting you."></textarea>
             </div>
             <button className="form-btn" type="submit">Send</button>
           </form>
           <div className="features">
-            <div className="feature">
-                <i className="fas fa-chart-pie"></i>
-                <h3>Analytics</h3>
-                <p>Don’t hesitate to leave your company info, so we can make a quick analysis before contacting you.</p>
-            </div>
             <div className="feature">
                 <i className="fas fa-phone-volume"></i>
                 <h3>Call Us At</h3>
