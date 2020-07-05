@@ -4,7 +4,7 @@ date: 2020-04-02T16:35:26.665Z
 description: In case you were thinking about starting your business and
   wondering what it’s going to take to find your little small business grow...
 ---
-![blog header](blog1.gif)
+![blog header](rankmeup-rocket-gif.gif)
 
 In case you were thinking about starting your business and wondering what it’s going to take to find your little small business grow to an independent adult that can one day stand on its feet and take care of you and your employees years and years to come, then you got to know what you are getting yourself into.
 
